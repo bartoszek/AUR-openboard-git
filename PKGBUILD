@@ -5,10 +5,10 @@
 ((ENABLE_QT5)) && qt="qt5" || qt="qt6"
 
 pkgname=openboard-git
-_fragment="#branch=master"
-pkgver=1.7.0.r11.gfff1a15e
+_fragment="#branch=dev"
+pkgver=1.7.1.r45.g844264f1
 pkgrel=1
-pkgdesc="Interactive whiteboard software for schools and universities (development version current master)"
+pkgdesc="Interactive whiteboard software for schools and universities (development version current dev)"
 arch=('x86_64' 'i686')
 url="http://openboard.ch/index.en.html"
 license=('GPL3')
