@@ -6,7 +6,7 @@
 
 pkgname=openboard-git
 _fragment="#branch=master"
-pkgver=1.7.0.r11.gfff1a15e
+pkgver=1.7.3.r3.g9ac523e6
 pkgrel=1
 pkgdesc="Interactive whiteboard software for schools and universities (development version current master)"
 arch=('x86_64' 'i686')
@@ -45,8 +45,6 @@ prepare() {
   git apply -v "$srcdir"/qchar.patch
   msg2 "quazip"
   git apply -v "$srcdir"/quazip.patch
-  msg2 "fix translation issue"
-  git revert --no-commit  bc42f702afca517bbf2a3de60ed4827729400537
   msg2 "pop cxx standard to 20"
   git apply -v "$srcdir"/cxx20.patch
 }
