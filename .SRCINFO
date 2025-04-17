@@ -1,12 +1,13 @@
 pkgbase = openboard-git
 	pkgdesc = Interactive whiteboard software for schools and universities (development version current master)
 	pkgver = 1.7.3.r5.g9a884af1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://openboard.ch/index.en.html
 	arch = x86_64
 	arch = i686
 	license = GPL3
 	makedepends = git
+	makedepends = cmake
 	makedepends = qt6-tools
 	depends = qt6-base
 	depends = qt6-declarative
@@ -25,16 +26,6 @@ pkgbase = openboard-git
 	provides = openboard=1.7.3
 	conflicts = openboard
 	source = git+https://github.com/OpenBoard-org/OpenBoard.git#branch=master
-	source = openboard.desktop
-	source = qchar.patch
-	source = quazip.patch
-	source = drop_ThirdParty_repo.patch
-	source = cxx20.patch
 	sha256sums = SKIP
-	sha256sums = e518455b149ced284f515219d752a579f82c67fd143c6f489ea00ff0741a0c79
-	sha256sums = b40fdab85f5921d0404c07db64628a2428a87d39193d2797bbef2e69b1d51549
-	sha256sums = 3f7cefa3018ccfdb85be81c5daebf09751ae2e0535d4f64f69b0e221127be405
-	sha256sums = a6a9bc1f9c9bee0345b735fcf422245ae7946f96f6c34520dd63530a98978c14
-	sha256sums = 4f93c75db979702e9256f298070c8548677d5afb430e450d6578b515bd9ff4bb
 
 pkgname = openboard-git
